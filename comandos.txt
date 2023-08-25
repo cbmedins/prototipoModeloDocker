@@ -1,0 +1,11 @@
+# crea la imagen
+docker build -t cardio_imagen .
+
+#corre la imagen
+docker run -d -p 8000:8000 cardio_imagen
+
+#lista imagenes disponibles
+docker images
+
+#ingresa a la imagen mediante su id
+docker run -it --rm e21e7b93cb35 /bin/bash
